@@ -5,8 +5,7 @@ A Simple And Elegant Ghost Theme Derive From Default Theme Casper
 # Preview
 
 [在线预览](https://zhaohaodang.com/blog/)
-![预览图1](https://ws1.sinaimg.cn/large/b9691c2dgy1fj5hqjs9auj20ib0gwwff.jpg)
-![预览图2](https://ws1.sinaimg.cn/large/b9691c2dgy1fj5hw1uvoaj20ht0e03z8.jpg)
+
 ## Feature
 
 * 仅有博文列表以及博文内容两个页面，极简
