@@ -1,0 +1,9 @@
+<nav class="pagination" role="navigation">
+    {{#if prev}}
+        <a href="{{page_url prev}}" class="blog-nav" id="newer"><&nbsp;Newer</a>
+    {{/if}}
+    {{!-- <span class="page-number">Page {{page}} of {{pages}}</span> --}}
+    {{#if next}}
+        <a  href="{{page_url next}}" class="blog-nav" id="older">Older&nbsp;></a>
+    {{/if}}
+</nav>

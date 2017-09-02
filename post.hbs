@@ -1,0 +1,31 @@
+{{!< default}}
+{{> "header"}}
+{{!-- The comment above "< default" means - insert everything in this file into
+    the {{{body}}} of the default.hbs template, containing the blog header/footer. --}}
+
+{{!-- Everything inside the #post tags pulls data from the post --}}
+{{#post}}
+<div class="main">
+<div class="post">
+    <h3 class="date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD/MM YYYY"}}</h3>
+    <h1>{{title}}</h1>
+    <div class="content">
+        {{content}}
+    </div>
+</div>
+
+{{!-- Links to Previous/Next posts --}}
+<aside class="read-next">
+    {{#next_post}}
+    <a class="read-next-story next" href="{{url}}">
+        <h2>下一篇：<span>{{title}}</span></h2>
+    </a>
+    {{/next_post}}
+    {{#prev_post}}
+    <a class="read-next-story prev" href="{{url}}">
+        <h2>上一篇：<span>{{title}}</span></h2>
+    </a>
+    {{/prev_post}}
+</aside>
+</div>
+{{/post}}
