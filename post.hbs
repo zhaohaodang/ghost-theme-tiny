@@ -8,6 +8,7 @@
 <div class="main">
 <div class="post">
     <h3 class="date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="MM/DD YYYY"}}</h3>
+    <p>{{id}}</p>
     <h1>{{title}}</h1>
     <div class="content">
         {{content}}
@@ -28,4 +29,5 @@
     {{/prev_post}}
 </aside>
 </div>
+{{> "comment"}}
 {{/post}}
