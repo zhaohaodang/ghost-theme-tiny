@@ -107,7 +107,7 @@ pre .xml .cdata {
 
 .post h1,
 .post h2 {
-    text-transform: uppercase;
+   // text-transform: uppercase;
 }
 
 .post h1 a:hover,
@@ -210,7 +210,10 @@ pre .xml .cdata {
 
 .post .content code {
     font-family: "Roboto Mono", "Menlo", "Consolas", monospace;
-    font-size: 13px;
+    //font-size: 13px;
+    color:#5fbf5e;
+    padding:2px;
+    margin:0px 2px;
     background-color: #f6f6f6;
     /*  padding: 3px 10px;
   margin: 0 5px;*/
