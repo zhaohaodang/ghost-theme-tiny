@@ -18,13 +18,43 @@ a {
   transition: color 0.2s ease, border-color 0.2s ease;
 }
 .header {
-  letter-spacing: 5px;
-  margin: 50px auto 15px;
+  letter-spacing: 3px;
+  margin: 80px auto 0px;
   text-align: center;
 }
-.header a {
+.header .logo{
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.header .logo img{
+  width: 100%;
+  height: 100%;
+}
+.header .tit {
   font-size: 15px;
   color: #444;
+}
+.nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid #ececec;
+  box-shadow: 0 2px 5px #ececec;
+  padding: 10px 0 10px 30px;
+  z-index: 100;
+  background: #fff;
+  width: 100%;
+}
+.nav .nav-item {
+  margin-right: 10px;
+}
+.nav .nav-current a{
+  color: #42b983;
 }
 .links {
   text-align: center;
@@ -57,14 +87,14 @@ h6 {
   color: #444;
 }
 .main {
-  max-width: 600px;
+  max-width: 900px;
   margin: 50px auto;
   padding: 0 30px 50px;
   position: relative;
 }
 @media screen and (max-width: 420px) {
   .header {
-    margin: 40px auto 10px;
+    margin: 70px auto 0px;
   }
   .header a {
     font-size: 14px;

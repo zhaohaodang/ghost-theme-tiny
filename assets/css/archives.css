@@ -1,0 +1,15 @@
+.archives-info time{
+    float: left;
+    width: 50px;
+}
+.archives-info a{
+    float: left;
+    width: 80%;
+}
+.archives-item{
+    margin-bottom: 15px;
+}
+.archives-year{
+    font-size: 20px;
+    margin: 20px 0;
+}

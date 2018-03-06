@@ -1,0 +1,9 @@
+{{! navigation }}
+<div class="nav">
+    {{#foreach navigation}}
+    <span class="nav-item {{#if current}}nav-current{{/if}}">
+        <a href="{{url absolute=" true "}}">{{label}}</a>
+        {{!-- {{#unless @last}} · {{/unless}} --}}
+    </span>
+    {{/foreach}}
+</div>

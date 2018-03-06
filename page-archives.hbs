@@ -1,0 +1,69 @@
+{{!< default}} 
+{{> "header"}} {{! This is a page template. A page outputs content just like any other post, and has all the same attributes
+    by default, but you can also customise it to behave differently if you prefer. }} {{! Everything inside the #post tags
+    pulls data from the page }} {{#post}} {{! The main container area on the homepage }}
+    <div class="main">
+        <div>
+            <article class="archives">
+                <section class="archives-content">
+                    <p class="archives-total">
+                        {{! count posts }} {{#get "posts" as |posts postPages|}} {{! Use our pages (pagination) object }}
+                        <strong>目前共计&nbsp;
+                            <span style="color:#42b983">{{postPages.total}}</span>&nbsp;篇日志，继续努力！</strong>
+                        {{/get}}
+                    </p>
+                    {{#get "posts" limit="all" order="published_at desc"}} {{#foreach posts}}
+                    <div class='archives-item clearfix' date="{{date format='YYYY'}}">
+                        <div class="archives-info">
+                            <time class="archives-date" datetime="{{date published_at format='MM-DD'}}">{{date published_at format="MM-DD"}}</time>
+                            <a href='{{url}}'>{{title}}</a>
+                        </div>
+                    </div>
+                    {{/foreach}} {{/get}}
+                </section>
+            </article>
+            <div>
+            </div>
+
+            {{/post}}
+            <script>
+                var yearArray = new Array();
+                document.querySelectorAll(".archives-item").forEach(function (cur, index) {
+                    var archivesYear = cur.getAttribute("date")
+                    yearArray.push(archivesYear);
+                });
+                var uniqueYear = unique(yearArray);
+
+                for (var i = 0; i < uniqueYear.length; i++) {
+                    var year = uniqueYear[i];
+                    // var zodiac = queryZodiac(year);
+                    var html = "<h3 class='archives-year'>" + year + "</h3>";
+                    var nodeList = document.querySelectorAll("[date='" +year + "']");
+                    var firstChild = nodeList[0];
+                    var dateNode = createNode(html);
+                    firstChild.before(dateNode);
+                }
+
+                function unique(array) {
+                    var n = []; //一个新的临时数组 
+                    //遍历当前数组 
+                    for (var i = 0; i < array.length; i++) {
+                        //如果当前数组的第i已经保存进了临时数组，那么跳过， 
+                        //否则把当前项push到临时数组里面 
+                        if (n.indexOf(array[i]) == -1) n.push(array[i]);
+                    }
+                    return n;
+                }
+                function createNode(htmlStr) {
+                    var div = document.createElement("div");
+                    div.innerHTML = htmlStr;
+                    return div.childNodes[0];
+                }
+                function queryZodiac(year) {
+                    var ss = year - 2008;//设定2008为初始年份 
+                    var ssc = ss % 12;
+                    //var ssyear = new Array("子鼠", "丑牛", "寅虎", "卯兔", "辰龙", "巳蛇", "午马", "未羊", "申猴", "酉鸡", "戌狗", "亥猪");
+                    var ssyear = new Array("鼠", "牛", "虎", "兔", "龙", "蛇", "马", "羊", "猴", "鸡", "狗", "猪");
+                    return ssyear[ssc] ? { value: ssc, name: ssyear[ssc] } : null
+                }
+            </script>
