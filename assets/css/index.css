@@ -22,7 +22,7 @@
 }
 
 .main h2 {
-    font-size: 20px;
+    font-size: 16px;
     letter-spacing: 1px;
     margin-left: 120px;
 }
@@ -41,6 +41,24 @@
     position: absolute;
     left: 0;
     top: 21px;
+}
+
+.main h2 .tag-box {
+    float: right;
+    /* margin-bottom: -5px; */
+}
+
+.main h2 .tag-box a {
+    font-size: 12px;
+    transition: 0.3s;
+    background: #42b983;
+    padding: 2px 4px;
+    margin-right: 4px;
+    border-radius: 2px;
+    color: #fff;
+}
+.main h2 .tag-box a:hover{
+    opacity: 0.8;
 }
 
 @media screen and (max-width: 420px) {
@@ -63,7 +81,12 @@
         margin-top: -35px;
     }
 }
-
+@media screen and (max-width: 750px){
+    .main h2 .tag-box {
+        float: none;
+        margin-bottom: -5px;
+    }
+}
 .pagination {
     margin-top: 30px;
     text-align: center;
@@ -71,8 +94,12 @@
 
 .pagination #newer {
     margin-right: 30px;
-}.pagination a{
-  transition: 0.3s;}
-.pagination a:hover{
-color: #42b983;
+}
+
+.pagination a {
+    transition: 0.3s;
+}
+
+.pagination a:hover {
+    color: #42b983;
 }

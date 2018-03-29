@@ -20,7 +20,8 @@
     <link rel="stylesheet" type="text/css" href="{{asset "css/base.css"}}" />
     <link rel="stylesheet" type="text/css" href="{{asset "css/common.css"}}" />
     <link rel="stylesheet" type="text/css" href="{{asset "css/archives.css"}}" />
-    {{#is "index"}}<link rel="stylesheet" type="text/css" href="{{asset "css/index.css"}}" />{{/is}}
+    {{!-- {{#is "index"}}<link rel="stylesheet" type="text/css" href="{{asset "css/index.css"}}" />{{/is}} --}}
+    <link rel="stylesheet" type="text/css" href="{{asset "css/index.css"}}" />
     {{#is "post"}}
     {{!-- <link rel="stylesheet" type="text/css" href="{{asset "css/vue.css"}}" /> --}}
     <link rel="stylesheet" type="text/css" href="{{asset "css/post.css"}}" />
@@ -41,7 +42,7 @@
     {{!-- Ghost outputs important scripts and data with this tag --}}
     {{ghost_foot}}
     {{!-- The main JavaScript file for Casper --}}
-    {{!--<script type="text/javascript" src="{{asset "js/index.js"}}"></script>--}}
+    <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
     {{#is "post"}}
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
     <script type="text/javascript" src="{{asset "js/post.js"}}"></script>

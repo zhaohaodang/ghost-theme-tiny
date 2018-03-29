@@ -3,7 +3,12 @@
 {{#foreach posts}}
     <li>
         <h3 datetime="{{date format="YYYY-MM-DD"}}">{{date format="YYYY MM/DD"}}</h3>
-        <h2><a href="{{url}}">{{title}}</a></h2>
+        <h2>
+            <a href="{{url}}">{{title}}</a>        
+            <p class="tag-box">
+                {{tags}}
+            </p>
+        </h2>
     </li>
 {{/foreach}}
 </ul>

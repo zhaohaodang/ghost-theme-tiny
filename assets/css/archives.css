@@ -5,6 +5,10 @@
 .archives-info a{
     float: left;
     width: 80%;
+    transition: 0.3s;
+}
+.archives-info a:hover{
+    color:#42b983;
 }
 .archives-item{
     margin-bottom: 15px;
