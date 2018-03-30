@@ -16,9 +16,9 @@
 
 首先下载主题包↓
 
-[旧版本](https://github.com/zhaohaodang/ghost-theme-tiny/archive/1.0.0.zip)，
+[旧版本](https://github.com/zhaohaodang/ghost-theme-tiny/archive/1.0.0.zip)（适合版本低于1.0的Ghost系统）
 
-[最新版本](https://github.com/zhaohaodang/ghost-theme-tiny/archive/1.1.2.zip)
+[最新版本](https://github.com/zhaohaodang/ghost-theme-tiny/archive/1.1.2.zip)（适合版本大于等于1.0的Ghost系统）
 
 进入博客后台（博客地址+`/ghost`），点击左侧栏的`Design`栏目，在`Themes`标签下上传压缩包，激活。
 
