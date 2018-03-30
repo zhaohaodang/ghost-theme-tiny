@@ -7,7 +7,6 @@
 
     {{!-- Page Meta --}}
     <title>{{meta_title}}</title>
-    <meta name="description" content="{{meta_description}}" />
 
     {{!-- Mobile Meta --}}
     <meta name="HandheldFriendly" content="True" />
@@ -47,5 +46,17 @@
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
     <script type="text/javascript" src="{{asset "js/post.js"}}"></script>
     {{/is}}
+    <script>
+        var _hmt = _hmt || [];
+        (function (baidu_tongji) {
+            if(!baidu_tongji){
+                return false
+            }
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?"+baidu_tongji;
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })(window.baidu_tongji);
+    </script>
 </body>
 </html>

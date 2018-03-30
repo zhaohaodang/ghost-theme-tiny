@@ -1,31 +1,42 @@
-{{!< default}}
-{{> "header"}}
-{{!-- The comment above "< default" means - insert everything in this file into
+{{!< default}} {{> "header"}} 
+{{!-- The comment above "
+    < default " means - insert everything in this file into
     the {{{body}}} of the default.hbs template, containing the blog header/footer. --}}
 
 {{!-- Everything inside the #post tags pulls data from the post --}}
 {{#post}}
-<div class="main">
-<div class="post">
-    <h3 class="date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="YYYY-DD-MM"}}</h3>
+<div class="main ">
+<div class="post ">
+    <h3 class="date " datetime="{{date format="YYYY-MM-DD" }} ">{{date format="YYYY-DD-MM "}}</h3>
     <h1>{{title}}</h1>
-    <div class="content">
+    <div class="content ">
         {{content}}
     </div>
 </div>
 
 {{!-- Links to Previous/Next posts --}}
-<aside class="read-next">
+<aside class="read-next ">
     {{#next_post}}
-    <a class="read-next-story next" href="{{url}}">
+    <a class="read-next-story next " href="{{url}} ">
         <h2>下一篇：<span>{{title}}</span></h2>
     </a>
     {{/next_post}}
     {{#prev_post}}
-    <a class="read-next-story prev" href="{{url}}">
+    <a class="read-next-story prev " href="{{url}} ">
         <h2>上一篇：<span>{{title}}</span></h2>
     </a>
     {{/prev_post}}
 </aside>
+<div id="disqus_thread"></div>
 </div>
 {{/post}}
+<script type="text/javascript ">
+    (function(disqus_shortname) {
+        if(!disqus_shortname){
+            return false
+        }
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })(window.disqus_shortname);
+</script>
