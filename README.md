@@ -14,11 +14,11 @@
 
 ## 使用
 
-首先下载主题压缩包↓
+首先下载主题包↓
 
-[Ghost-0.10.1旧版本](https://github.com/zhaohaodang/ghost-theme-tiny/archive/1.0.0.zip)，
+[旧版本](https://github.com/zhaohaodang/ghost-theme-tiny/archive/1.0.0.zip)，
 
-[Ghost-1.20.0新版本](https://github.com/zhaohaodang/ghost-theme-tiny/archive/1.1.0.zip)
+[最新版本](https://github.com/zhaohaodang/ghost-theme-tiny/archive/1.1.2.zip)
 
 进入博客后台（博客地址+`/ghost`），点击左侧栏的`Design`栏目，在`Themes`标签下上传压缩包，激活。
 
@@ -27,7 +27,7 @@
 
 ```javascript
 <script>
-	//baidu_tongji 是你在百度统计申请到的id
+    //baidu_tongji 是你在百度统计申请到的id
     var baidu_tongji = '33fbd6f1c17fbe2f063ddd873f375596';
     //disqus_shortname 是你在disqus填写的简写名称
     var disqus_shortname = 'zhaohd';
