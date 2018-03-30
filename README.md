@@ -27,16 +27,10 @@
 
 ```javascript
 <script>
-    //请将变量赋值为你本人在对应平台申请获得的id
-    //百度统计id
-    var bdtjId = '33fbd6f1c17fbe2f063ddd873f375596';
-    //谷歌统计id
-    var gaId = 'UA-100015685-2';
-    //国外评论插件-disqus的id
-    var disqusId = 'zhaohd-blog';
-    //国内评论插件-畅言的id以及conf
-    var appid = 'cyt4F7Qst'; 
-    var conf = 'prod_57fac42b23b60c692ac8ee4ed535d8f3'; 
+	//baidu_tongji 是你在百度统计申请到的id
+    var baidu_tongji = '33fbd6f1c17fbe2f063ddd873f375596';
+    //disqus_shortname 是你在disqus填写的简写名称
+    var disqus_shortname = 'zhaohd';
 </script>
 ```
 ## 开启归档页面
