@@ -88,7 +88,8 @@ h6 {
 }
 .main {
   max-width: 900px;
-  margin: 50px auto;
+  margin: 0 auto;
+  margin-top: 50px;
   padding: 0 30px 50px;
   position: relative;
 }

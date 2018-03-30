@@ -107,7 +107,7 @@ pre .xml .cdata {
 
 .post h1,
 .post h2 {
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 .post h1 a:hover,
@@ -241,7 +241,7 @@ pre .xml .cdata {
 
 .post .content blockquote {
     margin: 2em 0;
-    padding-left: 30px;
+    padding-left: 10px;
     border-left: 5px solid #e6e6e6;
 }
 
@@ -300,7 +300,7 @@ pre .xml .cdata {
 
 @media screen and (max-width: 900px) {
     .post {
-        padding-bottom: 80px;
+        /* padding-bottom: 80px; */
     }
     .blog-nav {
         position: absolute;
