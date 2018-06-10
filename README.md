@@ -5,6 +5,7 @@
 # 预览
 PC端预览图
 ![https://sinacloud.net/zhaohaodang/screenshot-desktop.jpg](https://sinacloud.net/zhaohaodang/screenshot-desktop.jpg)
+
 移动端预览图
 ![https://sinacloud.net/zhaohaodang/screenshot-mobile.jpg](https://sinacloud.net/zhaohaodang/screenshot-mobile.jpg)
 
