@@ -3,8 +3,10 @@
 适用于Ghost博客系统的简约主题。
 
 # 预览
-
-[在线预览](https://zhaohaodang.com/blog/)
+PC端预览图
+![https://sinacloud.net/zhaohaodang/screenshot-desktop.jpg](https://sinacloud.net/zhaohaodang/screenshot-desktop.jpg)
+移动端预览图
+![https://sinacloud.net/zhaohaodang/screenshot-mobile.jpg](https://sinacloud.net/zhaohaodang/screenshot-mobile.jpg)
 
 ## 特性
 
