@@ -5,11 +5,11 @@
 # 预览
 PC端预览图
 
-![https://sinacloud.net/zhaohaodang/screenshot-desktop.jpg](https://sinacloud.net/zhaohaodang/screenshot-desktop.jpg)
+![YtiABt.png](https://s1.ax1x.com/2020/05/12/YtiABt.png)
 
 移动端预览图
 
-![https://sinacloud.net/zhaohaodang/screenshot-mobile.jpg](https://sinacloud.net/zhaohaodang/screenshot-mobile.jpg)
+![YtirHx.png](https://s1.ax1x.com/2020/05/12/YtirHx.png)
 
 ## 特性
 
