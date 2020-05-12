@@ -9,7 +9,7 @@ PC端预览图
 
 移动端预览图
 
-![YtirHx.png](https://s1.ax1x.com/2020/05/12/YtirHx.png)
+![YtFC5T.md.png](https://s1.ax1x.com/2020/05/12/YtFC5T.md.png)
 
 ## 特性
 
