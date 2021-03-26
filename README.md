@@ -44,3 +44,7 @@ PC端预览图
 3. 点击右侧的小齿轮，在底部为页面选择tags模板或者archives模板
 4. 发布页面
 
+## 注意
+1. 随着ghost博客系统版本版本的更新，该主题可能已经不适合最新版本。
+2. 页面头部的社交按钮超链接，请在代码里自行修改。
+3. 任何问题可以在此提出 https://github.com/zhaohaodang/ghost-theme-tiny/issues
