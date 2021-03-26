@@ -1,0 +1,20 @@
+.tags .tag-box {
+    margin-top: 10px;
+}
+
+.tags .tag-box a {
+    display: inline-block;
+    background: #42b983;
+    padding: 2px 4px;
+    border-radius: 4px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.tags .tag-box a:hover {
+    opacity: 0.8;
+}
+
+.tags .tag-box a:not(:first-child) {
+    margin-left: 6px;
+}

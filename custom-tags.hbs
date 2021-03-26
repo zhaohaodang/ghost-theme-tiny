@@ -1,0 +1,21 @@
+{{!< default}} {{> "header"}}
+    {{#post}}
+
+    <div class="main">
+        <div class="tags">
+            {{#get 'tags' limit='all' include='count.posts' order='count.posts desc'}}
+            <strong>目前共计&nbsp;
+                <span style="color:#42b983">{{tags.length}}</span>&nbsp;个标签，继续努力！
+            </strong>
+            <div class="tag-box">
+                {{#foreach tags}}
+                <a href='{{ url }}'>
+                    <span>{{ name }} <small>({{ count.posts }})</small></span>
+                </a>
+                {{/foreach}}
+            </div>
+            {{/get}}
+        </div>
+    </div>
+
+    {{/post}}
