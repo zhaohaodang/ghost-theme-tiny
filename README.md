@@ -23,9 +23,9 @@ PC端预览图
 
 [旧版本](https://github.com/zhaohaodang/ghost-theme-tiny/archive/1.0.0.zip)（适合版本低于1.0的Ghost系统）
 
-[最新版本](https://github.com/zhaohaodang/ghost-theme-tiny/archive/1.1.2.zip)（适合版本大于等于1.0的Ghost系统）
+[最新版本](https://github.com/zhaohaodang/ghost-theme-tiny/releases/tag/2.0.0)（适合4.0版本的Ghost系统）
 
-进入博客后台（博客地址+`/ghost`），点击左侧栏的`Design`栏目，在`Themes`标签下上传压缩包，激活。
+进入博客后台（博客地址+`/ghost`），点击左侧栏的小齿轮图标，点击`Themes`模块，然后点击底部`upload theme`按钮（记得active）。
 
 ## 开启评论或统计
 默认不开启任何评论或统计，你可以在`{{ghost_head}}`为以下几个全局变量赋值，以开启对应评论或者统计：
@@ -38,8 +38,9 @@ PC端预览图
     var disqus_shortname = 'zhaohd';
 </script>
 ```
-## 开启归档页面
+## 开启归档和标签页面
 1. 进入博客的后台
-2. New story，新建一篇文章，标题为Archives
-3. 点击文章右侧的小齿轮，确认“Post URL”是否为“archives”，不是则修改为“archives”。接着勾选“Turn this post into a page”，然后**发布文章**
-> 注意！！！如果你下载的是旧版本（Ghost版本低于1.0），“Post URL”将会被系统格式化成“archives-post”，我们无法修改为“archives”，这时你只需将本主题包中的`page-archives.hbs`文件名，修改为与“Post URL”相对应的`page-archives-post.hbs`即可。
+2. 点击左侧栏的Pages，新建一个page
+3. 点击右侧的小齿轮，在底部为页面选择tags模板或者archives模板
+4. 发布页面
+
