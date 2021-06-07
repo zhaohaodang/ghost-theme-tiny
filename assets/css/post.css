@@ -255,6 +255,7 @@ pre .xml .cdata {
 .post img {
     display: block;
     max-width: 100%;
+    height: auto;
 }
 
 .blog-nav {
@@ -348,10 +349,11 @@ pre .xml .cdata {
         color: #444;
     }
 }
+
 .read-next-story h2 {
     margin-bottom: 10px;
 }
+
 .read-next-story h2 span {
     color: #42b983;
 }
-
