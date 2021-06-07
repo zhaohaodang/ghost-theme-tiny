@@ -23,7 +23,7 @@ PC端预览图
 
 [旧版本](https://github.com/zhaohaodang/ghost-theme-tiny/archive/1.0.0.zip)（适合版本低于1.0的Ghost系统）
 
-[最新版本](https://github.com/zhaohaodang/ghost-theme-tiny/releases/tag/2.0.0)（适合4.0版本的Ghost系统）
+[最新版本](https://github.com/zhaohaodang/ghost-theme-tiny/tags)（适合4.0版本的Ghost系统）
 
 进入博客后台（博客地址+`/ghost`），点击左侧栏的小齿轮图标，点击`Themes`模块，然后点击底部`upload theme`按钮（记得active）。
 
